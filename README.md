@@ -9,10 +9,6 @@ networks without the use of a VPN. Documentation and more
 information can be found at
 [docs.pritunl.com](https://docs.pritunl.com/docs/pritunl-zero)
 
-[Dockerfile](https://github.com/pritunl/pritunl-zero-docker)
-
-[![pritunl](//pritunl.com/img/docker/pritunl.png)](https://pritunl.com)
-
 # Usage
 
 To use this container the `MONGO_URI` and `NODE_ID` must be set. The node ID
