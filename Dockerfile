@@ -12,7 +12,7 @@ RUN rpm --import key.tmp
 RUN rm -f key.tmp
 
 RUN yum update -y
-RUN yum install -y pritunl-zero-1.0.1130.30
+RUN yum install -y pritunl-zero-1.0.1146.22
 
 ENTRYPOINT ["/usr/bin/pritunl-zero"]
 CMD ["start"]
