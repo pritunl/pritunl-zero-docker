@@ -11,8 +11,9 @@ RUN gpg --armor --export 7568D9BB55FF9E5287D586017AE645C0CF8E292A > key.tmp
 RUN rpm --import key.tmp
 RUN rm -f key.tmp
 
+RUN echo "v1.0.1146.22"
 RUN yum update -y
-RUN yum install -y pritunl-zero-1.0.1130.30
+RUN yum install -y pritunl-zero
 
 ENTRYPOINT ["/usr/bin/pritunl-zero"]
 CMD ["start"]
