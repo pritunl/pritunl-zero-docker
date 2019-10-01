@@ -22,5 +22,5 @@ docker run --rm \
 	-p 443:443 \
 	-e MONGO_URI="mongodb://mongo.example.domain:27017/pritunl-zero" \
 	-e NODE_ID="5b8e11e4610f990034635e98" \
-	pritunl/pritunl-zero
+	iad.ocir.io/pritunl8472/pritunl-zero
 ```
