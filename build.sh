@@ -4,7 +4,7 @@ set -e
 sudo docker pull oraclelinux:7
 sudo docker build --rm --no-cache -t pritunl-zero .
 
-export version="1.0.1696.91"
+export version="1.0.1741.88"
 
 sudo docker tag pritunl-zero:latest iad.ocir.io/pritunl8472/pritunl-zero:"$version"
 sudo docker tag pritunl-zero:latest iad.ocir.io/pritunl8472/pritunl-zero:latest
