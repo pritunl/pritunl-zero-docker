@@ -1,10 +1,10 @@
-FROM oraclelinux:7
+FROM oraclelinux:8
 
 RUN yum update -y
 
 RUN echo $'[pritunl]\n\
 name=Pritunl Repository\n\
-baseurl=https://repo.pritunl.com/stable/yum/oraclelinux/7/\n\
+baseurl=https://repo.pritunl.com/stable/yum/oraclelinux/8/\n\
 gpgcheck=1\n\
 enabled=1' > /etc/yum.repos.d/pritunl.repo
 

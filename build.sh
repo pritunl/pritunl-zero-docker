@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-sudo podman pull oraclelinux:7
+sudo podman pull oraclelinux:8
 sudo podman build --rm --no-cache -t pritunl-zero .
 
 export version="1.0.2262.41"
