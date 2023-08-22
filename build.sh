@@ -4,7 +4,7 @@ set -e
 sudo podman pull oraclelinux:8
 sudo podman build --rm --no-cache -t pritunl-zero .
 
-export version="1.0.2753.0"
+export version="1.0.2824.86"
 
 sudo podman tag pritunl-zero:latest iad.ocir.io/pritunl8472/pritunl-zero:"$version"
 sudo podman tag pritunl-zero:latest iad.ocir.io/pritunl8472/pritunl-zero:latest
