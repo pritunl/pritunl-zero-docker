@@ -1,10 +1,10 @@
 #!/bin/bash
 set -e
 
+read -p "Version: " version
+
 sudo podman pull oraclelinux:8
 sudo podman build --rm --no-cache -t pritunl-zero .
-
-read -p "Version: " version
 
 sudo podman tag pritunl-zero:latest iad.ocir.io/pritunl8472/pritunl-zero:"$version"
 sudo podman tag pritunl-zero:latest iad.ocir.io/pritunl8472/pritunl-zero:latest
